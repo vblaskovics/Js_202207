@@ -1,7 +1,7 @@
 var b1 = true;
 console.log("b1:", typeof b1);
 
-var b2 = (2 < 3);
+var b2 = 2 < 3;
 console.log("b2:", b2);
 console.log("b2 type:", typeof b2);
 
@@ -19,7 +19,7 @@ var szam1 = 10;
 var feltetel1 = szam1 < 20;
 var feltetel2 = szam1 > 5;
 console.log("feltetel1 AND feltetel2:", feltetel1 && feltetel2);
-console.log("Logical AND:", (szam1 < 20) && (szam1 > 5));
+console.log("Logical AND:", szam1 < 20 && szam1 > 5);
 console.log("true && false:", true && false);
 console.log("true && true && false:", true && true && false);
 

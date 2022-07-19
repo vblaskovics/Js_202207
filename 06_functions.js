@@ -10,6 +10,7 @@ osszeadEsKiir(20, 40);
 osszeadEsKiir(21, 52);
 
 function osszead(bemenet1, bemenet2) {
+  console.log("osszead start");
   return bemenet1 + bemenet2;
 }
 

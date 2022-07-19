@@ -16,8 +16,12 @@ console.log('2.FELADAT________')
 // 2. feladat
 // Írj egy függvényt, ami egy számról megmondja, hogy egyjegyű, kétjegyű
 // vagy háromjegyű! Ha egyik sem igaz, akkor írja ki, hogy hibás a bemenet!
+// 2./1 feladat
+// Negatív számokra is működjön
+// 2/2 feladat
+// Nem egész számok esetén, írja ki, hogy hibás a bemenet!
 function digitCount(n) {
-  if (n % 1 != 0) {
+  if (n % 1 != 0) { // ellenőrizzük, hogy egész szám-e
     console.log(n, "Hibás a bemenet! Nem egész szám")
     return
   }

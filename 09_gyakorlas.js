@@ -25,3 +25,11 @@ var user2 = { name: "Peter", age: 40 };
 var user3 = { name: "Ben", age: 60 };
 console.log("3. feladat", avarAge3(user1, user2, user3));
 
+// 4.
+// Írj egy függvényt, ami paraméterként 2 bemenetet vár, és kiírja a paraméterek típusát!
+function typeWriter(p1, p2){
+  console.log(typeof p1);
+  console.log(typeof p2);
+}
+console.log("4. feladat:");
+typeWriter(3, "alma");

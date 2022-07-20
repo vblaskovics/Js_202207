@@ -25,9 +25,9 @@ console.log("true && true && false:", true && true && false);
 
 console.log("Logical OR");
 console.log("true || true", true || true);
-console.log("szam1 > 9 || szam1 < 11", szam1 > 9 || szam1 < 11);
-console.log("szam1 > 9 || szam1 == 2", szam1 > 9 || szam1 == 2);
-console.log("szam1 > 9 && szam1 == 2", szam1 > 9 && szam1 == 2);
+var szam2 = 20;
+console.log("szam2 < -5 || szam2 > 10", szam2 < -5 || szam2 > 10);  // true
+console.log("szam2 < -5 || szam2 == 2", szam2 < -5 || szam2 == 2);  // false
 
 console.log("Logical NOT");
 var b3 = true;

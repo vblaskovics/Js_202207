@@ -11,6 +11,7 @@ var cars = [];
 cars[0] = "BMW";
 cars[1] = "Mercedes";
 cars[2] = "Nissan";
+cars[1] = "Toyota";
 console.log("cars:", cars);
 
 // A tömb elemek típusa dinamikus

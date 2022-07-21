@@ -56,7 +56,6 @@ function generateEmails(names, domain) {
 console.log("3. feladat");
 console.log(generateEmails(originNevek, "gmail.com"));
 
-
 function generateEmailsShort(names, domain) {
   for (var i = 0, result = []; i < names.length; i++)
     result.push(names[i].toLowerCase().replace(" ", ".") + "@" + domain);
@@ -76,3 +75,45 @@ console.log(generateEmailsShort(originNevek, "gmail.com"));
 // Julie White - Carol Davis
 // Catherine Hall - Samuel Lewis
 // ...stb
+
+// 6.
+// Írj egy függvényt, ami két tömböt vár bemenetül, és páronként kiírja a tömbök összes elemét!
+// ['a', 'b', 'c'], ['d', 'e', 'f', 'g']  =>
+//    a-d
+//    a-e
+//    a-f
+//    a-g
+//    ...stb.
+
+function parositas(t1, t2) {
+  for (var i = 0; i < t1.length; i++) {
+    for (var j = 0; j < t2.length; j++) {
+      console.log(t1[i], "-", t2[j]);
+    }
+  }
+}
+console.log("6. feladat");
+parositas(["a", "b", "c"], ["d", "e", "f", "g"]);
+
+// 6-s feladat máshogy megközelítve:
+// Írj egy függvényt, ami egy stringet, és egy tömböt vár. Írassa ki, a stringet,
+// a tömb összes elemével párosítva!
+console.log("6. feladat - MÁSHOGY");
+function stringTombParositas(string, tomb) {
+  for (var i = 0; i < tomb.length; i++) {
+    console.log(string, "-", tomb[i]);
+  }
+}
+console.log("6. feladat - MÁSHOGY - Első rész");
+stringTombParositas('alma', ['körte', 'dinnye', 'szőlő']);
+
+// írj egy függvényt, ami egy tömb ööszes elemét összepárosítja egy másik tömb összes elemével,
+// úgy hogy felhasználod az előbbi függvényt!
+function tombTombParositas(t1, t2) {
+  for (var i = 0; i < t1.length; i++) {
+    var str = t1[i];
+    stringTombParositas(str, t2);
+  }
+}
+console.log("6. feladat - MÁSHOGY - Teljes megoldás");
+tombTombParositas(["alma", "ananász"], ["körte", "dinnye", "szőlő"]);

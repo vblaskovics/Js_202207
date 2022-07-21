@@ -16,3 +16,10 @@
 // Pl.:
 // osszegDupla([3,5,5],[3,4]) => [12, 18, 10]
 
+// 4. feladat
+// Írj egy függvényt, ami bementként egy objektumot vár, és visszatér egy olyan 
+// számmal, ami az objektum 'max' kezdetű property-jeinek az értékeinek az
+// összegével egyenlő!
+// Pl.:
+// sumMaxProperties({maxA:10, maxB: 20, minA:0, minB:3}) => 30
+

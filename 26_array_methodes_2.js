@@ -25,5 +25,17 @@ console.log(tomb3);
 // FELADAT : Írj egy fgv-t, ami bemenetül egy tömböt vár, és visszatér egy olyan
 // tömbbel, ami a bemeneti tömb elemeit nagybetűs változatban tartalmazza!
 // map használatával!
+console.log(['a', 'b', 'c'].map(function (elem) {
+  return elem.toUpperCase();
+}));
 
+// filter - szűrés tömbből
+// azokat az elemeket fogja tartalmazni az új tömb, ahol true értéket adoot vissza
+// a callback függvény
+var tomb4 = tomb2.filter(function (n){
+  return n < 30;
+});
 
+console.log("filter________");
+console.log(tomb2);
+console.log(tomb4);

@@ -23,3 +23,7 @@
 // Pl.:
 // sumMaxProperties({maxA:10, maxB: 20, minA:0, minB:3}) => 30
 
+// 5. feladat
+// A 21_gyakorlas.js fájl 3-dik feladatát csináld meg úgy, hogy nem használhatsz
+// for ciklust vagy while ciklust (tehát csak array function-ök használatával)!
+

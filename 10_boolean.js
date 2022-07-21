@@ -30,6 +30,6 @@ console.log("szam2 < -5 || szam2 > 10", szam2 < -5 || szam2 > 10);  // true
 console.log("szam2 < -5 || szam2 == 2", szam2 < -5 || szam2 == 2);  // false
 
 console.log("Logical NOT");
-var b3 = true;
+var b3 = true; 
 console.log("!b3", !b3);
 console.log("!false", !false);

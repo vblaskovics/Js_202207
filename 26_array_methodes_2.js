@@ -40,8 +40,6 @@ console.log("filter________");
 console.log(tomb2);
 console.log(tomb4);
 
-
-
 console.log([1, 23, 34, 1, 34, 10].map(function (n){
   if (n === 1) {
     return 100;

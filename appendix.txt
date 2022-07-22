@@ -1,0 +1,20 @@
+JavaScript referencia:
+
+  - w3schools :
+    - https://www.w3schools.com/jsref/default.asp
+    - https://www.w3schools.com/js/default.asp 
+
+  - MDN Mozilla:
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+
+Ingyenes könyv JS témában (PRO):
+  - https://eloquentjavascript.net/
+
+Könyv ES5-höz:
+  - https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742 
+
+Coding platforms:
+- https://www.codewars.com/
+- https://www.codecademy.com/
+

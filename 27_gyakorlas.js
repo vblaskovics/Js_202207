@@ -70,8 +70,52 @@ console.log(osszegDupla([3, 5, 5], [3, 4]));
 // összegével egyenlő!
 // Pl.:
 // sumMaxProperties({maxA:10, maxB: 20, minA:0, minB:3}) => 30
-
+function sumMaxProperties(obj) {
+  var sumMax = 0;
+  for (var key in obj) {
+    if (key.startsWith('max')) {
+      sumMax += obj[key];
+    }
+  }
+  return sumMax;
+}
+console.log("4. feladat");
+console.log(sumMaxProperties({maxA:10, maxB: 20, minA:0, minB:3}));
 
 // 5. feladat
 // A 21_gyakorlas.js fájl 3-dik feladatát csináld meg úgy, hogy nem használhatsz
 // for ciklust vagy while ciklust (tehát csak array function-ök használatával)!
+
+// 21/3 Írj egy függvényt, ami visszatér egy olyan tömbbel, ami egy ilyen neveket
+// tartalmazó tömbből kiindulva létrehoz egy olyan tömböt, amiben név alapján
+// generált céges email címek vannak! Pl: [julie.white@telekom.hu, ...]
+
+var originNevek = [
+  "Julie White",
+  "Carol Davis",
+  "Julie Kelly",
+  "Catherine Hall",
+  "Samuel Lewis",
+  "Christina Wood",
+  "Noah Anderson",
+  "Grace Marshall",
+  "Sophia Morris",
+  "Karen Lewis",
+];
+
+function generateEmails(names, domain) {
+  return names.map(function (name) {
+    return name.replace(' ', '.').toLowerCase() + '@' + domain;
+  });
+}
+console.log("5. feladat");
+console.log(generateEmails(originNevek, "gmail.com"));
+
+// u.e. forEach-el:
+function generateEmails2(names, domain) {
+  var emails = [];
+  names.forEach(function (name) {
+    emails.push(name.replace(' ', '.').toLowerCase() + '@' + domain);
+  });
+  return emails;
+}

@@ -45,3 +45,35 @@ var p1 = new Person('Boba', 'Fet');
 console.log(p1.lastName);
 console.log(p1.fullName());
 
+// p1 -> Person.prototype -> Object.prototype
+// new Person() -> clone Person.prototype
+// p1 object prototype hivatkozása be lessz állítva a Person.prototype-ra
+
+// Függvény hívás:
+// 1. megpróbáljuk meghívni a p1.fullName() -> ilyen nincs
+// 2. a javascript megkeresi a p1 prototype hivatkozását, és megnézni,
+// hogy melyik prototype object-re mutat.
+// 3. Azon az objecten hívja meg, a függvényt (ha megtalálja)
+//  Pl. : Person.prototype.fullName() -> ezt már meg fogja tudni hívni
+
+// p1.fullName helyett a Person.prototype.fullName() fog meghívódni
+// p2.fullName helyett a Person.prototype.fullName() fog meghívódni
+// p3.fullName helyett a Person.prototype.fullName() fog meghívódni
+// p4.fullName helyett a Person.prototype.fullName() fog meghívódni
+// ....
+// Így tehát a példányok nem tartalmazzák a függvényeket
+
+// p1.firstName az létezik a p1-en belül, mert nem függvény
+
+// A prototype objektum minden más object-hez hasonlóan, menet
+// közben módosítható
+console.log(Person.prototype);
+Person.prototype.print = function(){
+  console.log(this.fullName());
+}
+p1.print();
+
+var p2 = new Person('John', 'Wick');
+p2.print();
+
+
